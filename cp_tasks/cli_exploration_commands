@@ -1,0 +1,7 @@
+#To get the details of the specific AMI ID 
+aws ec2 describe-images --image-ids ami-00f7e5c52c0f43726
+
+#Amazon ownerid -- 137112412989
+aws ec2 describe-images --owners 137112412989 --region us-west-2 --filters Name=architecture,Values=x86_64
+
+--filters Name=owner-id,Values=1
